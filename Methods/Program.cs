@@ -26,6 +26,10 @@ namespace Methods
             GreetFriend(friend1);
             GreetFriend(friend2);
             GreetFriend(friend3);
+
+            // Getting input
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
         }
 
         // Syntax

@@ -15,6 +15,7 @@ namespace Methods
             // Methodception
             int result = Add(Add(1, 2), Add(3, 4));
             Console.WriteLine(result);
+            Console.WriteLine(Multiply(result, 9));
         }
 
         // Syntax
@@ -33,6 +34,11 @@ namespace Methods
         public static int Add(int number1, int number2)
         {
             return number1 + number2;
+        }
+
+        public static int Multiply(int number1, int number2)
+        {
+            return number1 * number2;
         }
     }
 }

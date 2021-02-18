@@ -16,6 +16,16 @@ namespace Methods
             int result = Add(Add(1, 2), Add(3, 4));
             Console.WriteLine(result);
             Console.WriteLine(Multiply(result, 9));
+            Console.WriteLine(Divide(1, 3));
+
+            // Challenge
+            string friend1 = "Khalid";
+            string friend2 = "Johnny";
+            string friend3 = "Julien";
+
+            GreetFriend(friend1);
+            GreetFriend(friend2);
+            GreetFriend(friend3);
         }
 
         // Syntax
@@ -39,6 +49,17 @@ namespace Methods
         public static int Multiply(int number1, int number2)
         {
             return number1 * number2;
+        }
+
+        public static double Divide(double number1, double number2)
+        {
+            return number1 / number2;
+        }
+
+        // Challenge
+        public static void GreetFriend(string name)
+        {
+            Console.WriteLine("Hello " + name + ", my friend.");
         }
     }
 }

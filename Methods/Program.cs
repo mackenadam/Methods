@@ -27,14 +27,15 @@ namespace Methods
             GreetFriend(friend2);
             GreetFriend(friend3);
 
-            // Getting input
+            // Challenge 2 - Getting input 
             Console.WriteLine("Please enter a number:");
             string input1 = Console.ReadLine();
             Console.WriteLine("Please enter a second number to be added to the first:");
             string input2 = Console.ReadLine();
             Console.WriteLine(Add(Int32.Parse(input1), Int32.Parse(input2)));
-            
 
+            // Challenge 2 - Another solution
+            Console.WriteLine(AddInputs());
         }
 
         // Syntax
@@ -69,6 +70,17 @@ namespace Methods
         public static void GreetFriend(string name)
         {
             Console.WriteLine("Hello " + name + ", my friend.");
+        }
+
+        public static int AddInputs()
+        {
+            Console.WriteLine("Please enter a number:");
+            string input1 = Console.ReadLine();
+            int number1 = Int32.Parse(input1);
+            Console.WriteLine("Please enter a second number to be added to the first:");
+            string input2 = Console.ReadLine();
+            int number2 = Int32.Parse(input2);
+            return number1 + number2;
         }
 
     }

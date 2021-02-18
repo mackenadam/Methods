@@ -7,6 +7,7 @@ namespace Methods
         static void Main(string[] args)
         {
             WriteSomething();
+            WriteSomethingSpecific("I am an argument, called from a method.");
         }
 
         // Syntax
@@ -15,7 +16,11 @@ namespace Methods
         public static void WriteSomething()
         {
             Console.WriteLine("Called from method.");
-            Console.Read();
+        }
+
+        public static void WriteSomethingSpecific(string specificText)
+        {
+            Console.WriteLine(specificText);
         }
     }
 }
